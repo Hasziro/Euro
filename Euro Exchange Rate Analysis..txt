@@ -1,0 +1,54 @@
+# Forex Data Analysis and Database Insertion
+
+This Python script performs the following tasks:
+
+1. **Download Forex Data:**
+   - Downloads historical Forex data (EUR to PLN) from the Stooq website in CSV format.
+
+2. **Read CSV into DataFrame:**
+   - Reads the downloaded CSV file into a Pandas DataFrame.
+
+3. **Data Manipulation:**
+   - Creates new columns in the DataFrame:
+     - `DzienTygodnia`, `SkrotDzienTygodnia`, `Month`, and `Short_Month`.
+     - Calculates the mean value for selected columns.
+   
+4. **Calculate Averages:**
+   - Calculates the average closing price for the last 30, 60, and 90 days.
+
+5. **Insert Calculated Averages:**
+   - Inserts the calculated averages into the DataFrame.
+
+6. **Find Maximum Value:**
+   - Finds the maximum closing value from the last 6 months and inserts it into a new column.
+
+7. **DataFrame Description:**
+   - Prints a descriptive summary of the DataFrame.
+
+8. **Check Missing Values:**
+   - Prints the count of missing values in each column.
+
+9. **Check Data Types:**
+   - Prints the data types of each column.
+
+10. **Export DataFrame:**
+    - Exports the DataFrame to a text file named `file_import.txt`.
+
+11. **Connect to MySQL Database:**
+    - Connects to a MySQL database using the specified parameters.
+
+12. **Insert Data into MySQL:**
+    - Truncates the existing table `euro_kurs` in the database.
+    - Inserts data from the DataFrame into the MySQL table.
+
+13. **Commit Changes and Close Connection:**
+    - Commits changes to the database and closes the cursor and connection.
+
+## Instructions:
+
+### Before Running the Code:
+
+- Ensure that the required libraries are installed. You can install them using the following:
+  ```bash
+  pip install numpy pandas requests mysql-connector-python
+tabase.
