@@ -35,3 +35,4 @@ The script connects to a MySQL database and inserts the data into the 'euro_kurs
 
 
 
+
