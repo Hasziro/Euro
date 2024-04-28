@@ -30,8 +30,15 @@ The DataFrame is exported to a text file named 'file_import.txt'.
 5. MySQL Database Connection
 The script connects to a MySQL database and inserts the data into the 'euro_kurs' table. Make sure to replace the database connection details and table name with your own.
 
-6. adding moving avg plot 
+6. Tkinter GUI
+A simple Tkinter GUI is included with a button to execute the Euro exchange rate analysis.
 
+Instructions
+Ensure that the required libraries are installed using the provided command.
+Replace the MySQL database connection details in the script with your own.
+Execute the script to download, analyze, and export the Euro exchange rate data.
+Use the Tkinter GUI to run the analysis conveniently.
+Feel free to reach out for any further assistance or clarification. Happy analyzing!
 
 
 
